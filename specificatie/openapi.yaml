@@ -583,11 +583,6 @@ components:
                         Gegevens mogen niet worden verstrekt aan derden / maatschappelijke instellingen.
         geslachtsaanduiding:
           $ref: "#/components/schemas/Geslacht_enum"
-        leeftijd:
-          type: integer
-          description: |
-                        Leeftijd in jaren op het moment van bevragen.
-          example: 34
         datumEersteInschrijvingGBA:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/schemas/DatumOnvolledig"
         kiesrecht:
@@ -696,11 +691,6 @@ components:
         burgerservicenummer:
           type: "string"
           example: "555555021"
-        leeftijd:
-          type: integer
-          description: |
-                        Leeftijd op het moment van bevragen
-          example: 12
         inOnderzoek:
           $ref: "#/components/schemas/KindInOnderzoek"
         naam:
@@ -785,11 +775,6 @@ components:
           description: |
                         De achternaam van een persoon.
           example: "Vries"
-        voorletters:
-          type: "string"
-          description: |
-                        De voorletters van de persoon, afgeleid van de voornamen.
-          example: "P.J."
         voornamen:
           type: "string"
           description: |
@@ -883,26 +868,6 @@ components:
       allOf:
         - $ref: "#/components/schemas/Naam"
         - properties:
-            aanhef:
-              type: "string"
-              description: |
-                            Kun je gebruiken als aanhef in een brief gericht aan persoon.
-              example: "Hoogwelgeboren heer"
-            aanschrijfwijze:
-              type: "string"
-              description: |
-                            Samengestelde naam die je kunt gebruiken in de communicatie met de persoon.
-              example: "H.W. baron van den Aedel"
-            regelVoorafgaandAanAanschrijfwijze:
-              type: "string"
-              description: |
-                            Deze regel moet als aparte regel boven de aanschrijfwijze worden geplaatst. Komt alleen voor bij personen met een adellijke titel of predicaat.
-              example: "De hoogwelgeboren heer"
-            gebruikInLopendeTekst:
-              type: "string"
-              description: |
-                            Naam van persoon die je kunt gebruiken als je in lopende tekst (bijvoorbeeld in een brief) aan persoon refereert.
-              example: "baron Van den Aedel"
             aanduidingNaamgebruik:
               $ref: "#/components/schemas/Naamgebruik_enum"
             inOnderzoek:
