@@ -1318,10 +1318,7 @@ components:
                     * `eigen` - E - gebruik alleen de eigen naam
                     * `eigen_partner` - N - gebruik de eigen naam voor de partnernaam
                     * `partner` - P gebruik alleen de partnernaam
-                    * `partner_eigen` - V - gebruik de partnernaam voor de eigen naam.
-
-
-                    De aanduiding naamgebruik is verwerkt in Aanhef, Aanschrijfwijze en gebruikInLopendeTekst."
+                    * `partner_eigen` - V - gebruik de partnernaam voor de eigen naam."
       enum:
       - "eigen"
       - "eigen_partner"
