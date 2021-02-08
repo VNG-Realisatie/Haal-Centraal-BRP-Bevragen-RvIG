@@ -15,6 +15,7 @@ De laatste versie is 1.2.0. Lees de [release notes](https://vng-realisatie.githu
 * Lees de [Getting started](https://vng-realisatie.github.io/Haal-Centraal-BRP-bevragen-RvIG/getting-started)
 * Download de [technische specificaties](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen-RvIG/blob/master/specificatie/genereervariant/openapi.yaml)
 * Download [client code](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen-RvIG/tree/master/code)
+* Vraag een API-key voor toegang tot de Haal Centraal probeeromgeving aan bij de product owner [cathy.dingemanse@denhaag.nl](mailto:cathy.dingemanse@denhaag.nl)
 
 ## Heb je meer nodig?
 Gebruik de BRP bevragen API in combinatie met (een van de) andere BRP API’s:
