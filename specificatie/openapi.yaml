@@ -4,13 +4,15 @@ servers:
                   APILAB testserver
     url: https://www.haalcentraal.nl/haalcentraal/api/brp
 info:
-  title: Bevragen Ingeschreven Personen
+  title: Bevragen Ingeschreven Personen RvIG
   description: |
                 API voor het bevragen van ingeschreven personen uit de basisregistratie personen (BRP), inclusief de registratie niet-ingezeten (RNI). Met deze API kun je personen zoeken en actuele gegevens over personen, kinderen, partners en ouders raadplegen.
 
                 Gegevens die er niet zijn of niet actueel zijn krijg je niet terug. Heeft een persoon bijvoorbeeld geen geldige nationaliteit, en alleen een beëindigd partnerschap, dan krijg je geen gegevens over nationaliteit en partner.
 
-                Zie de [Functionele documentatie](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen/tree/v1.1.0/features) voor nadere toelichting.
+                Zie de [Functionele documentatie](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen/tree/v1.2.0/features) voor nadere toelichting.
+
+                De API zal door RvIG worden aangeboden. Daarin wordt een aantal afgeleide gegevens niet opgenomen. Daarom bevat deze specificatie minder gegevens dan de specificatie op [BRP-bevragen](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen/blob/master/specificatie/genereervariant/openapi.yaml).
   version: "1.2.0"
   contact:
     url: https://github.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen
@@ -583,11 +585,6 @@ components:
                         Gegevens mogen niet worden verstrekt aan derden / maatschappelijke instellingen.
         geslachtsaanduiding:
           $ref: "#/components/schemas/Geslacht_enum"
-        leeftijd:
-          type: integer
-          description: |
-                        Leeftijd in jaren op het moment van bevragen.
-          example: 34
         datumEersteInschrijvingGBA:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/schemas/DatumOnvolledig"
         kiesrecht:
@@ -696,11 +693,6 @@ components:
         burgerservicenummer:
           type: "string"
           example: "555555021"
-        leeftijd:
-          type: integer
-          description: |
-                        Leeftijd op het moment van bevragen
-          example: 12
         inOnderzoek:
           $ref: "#/components/schemas/KindInOnderzoek"
         naam:
@@ -785,11 +777,6 @@ components:
           description: |
                         De achternaam van een persoon.
           example: "Vries"
-        voorletters:
-          type: "string"
-          description: |
-                        De voorletters van de persoon, afgeleid van de voornamen.
-          example: "P.J."
         voornamen:
           type: "string"
           description: |
@@ -883,26 +870,6 @@ components:
       allOf:
         - $ref: "#/components/schemas/Naam"
         - properties:
-            aanhef:
-              type: "string"
-              description: |
-                            Kun je gebruiken als aanhef in een brief gericht aan persoon.
-              example: "Hoogwelgeboren heer"
-            aanschrijfwijze:
-              type: "string"
-              description: |
-                            Samengestelde naam die je kunt gebruiken in de communicatie met de persoon.
-              example: "H.W. baron van den Aedel"
-            regelVoorafgaandAanAanschrijfwijze:
-              type: "string"
-              description: |
-                            Deze regel moet als aparte regel boven de aanschrijfwijze worden geplaatst. Komt alleen voor bij personen met een adellijke titel of predicaat.
-              example: "De hoogwelgeboren heer"
-            gebruikInLopendeTekst:
-              type: "string"
-              description: |
-                            Naam van persoon die je kunt gebruiken als je in lopende tekst (bijvoorbeeld in een brief) aan persoon refereert.
-              example: "baron Van den Aedel"
             aanduidingNaamgebruik:
               $ref: "#/components/schemas/Naamgebruik_enum"
             inOnderzoek:
@@ -1353,10 +1320,7 @@ components:
                     * `eigen` - E - gebruik alleen de eigen naam
                     * `eigen_partner` - N - gebruik de eigen naam voor de partnernaam
                     * `partner` - P gebruik alleen de partnernaam
-                    * `partner_eigen` - V - gebruik de partnernaam voor de eigen naam.
-
-
-                    De aanduiding naamgebruik is verwerkt in Aanhef, Aanschrijfwijze en gebruikInLopendeTekst."
+                    * `partner_eigen` - V - gebruik de partnernaam voor de eigen naam."
       enum:
       - "eigen"
       - "eigen_partner"
