@@ -2228,7 +2228,7 @@
           },
           "aNummer" : {
             "type" : "string",
-            "description" : "het A-nummer van de persoon"
+            "description" : "Het A-nummer van de persoon\n"
           },
           "geheimhoudingPersoonsgegevens" : {
             "title" : "Indicatie geheim",
