@@ -2,7 +2,7 @@
 
 Bevragen Ingeschreven Personen RvIG
 - API version: 1.2.0
-  - Build date: 2021-02-19T12:52:03.859Z[Etc/UTC]
+  - Build date: 2021-02-22T08:00:54.409Z[Etc/UTC]
 
 API voor het bevragen van ingeschreven personen uit de basisregistratie personen (BRP), inclusief de registratie niet-ingezeten (RNI). Met deze API kun je personen zoeken en actuele gegevens over personen, kinderen, partners en ouders raadplegen.
 

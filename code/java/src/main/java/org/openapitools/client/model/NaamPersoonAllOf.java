@@ -29,7 +29,7 @@ import org.openapitools.client.model.NaamgebruikEnum;
 /**
  * NaamPersoonAllOf
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-02-19T12:52:03.859Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-02-22T08:00:54.409Z[Etc/UTC]")
 public class NaamPersoonAllOf {
   public static final String SERIALIZED_NAME_AANDUIDING_NAAMGEBRUIK = "aanduidingNaamgebruik";
   @SerializedName(SERIALIZED_NAME_AANDUIDING_NAAMGEBRUIK)

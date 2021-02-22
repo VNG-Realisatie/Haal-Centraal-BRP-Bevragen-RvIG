@@ -31,7 +31,7 @@ import org.openapitools.client.model.Waardetabel;
  * Gegevens over de voltrekking van het huwelijk of het aangaan van het geregistreerd partnerschap. * **datum** : De datum waarop het huwelijk is voltrokken of het partnerschap is aangegaan. * **land** : Het land waar het huwelijk is voltrokken of het partnerschap is aangegaan. * **plaats** : Als de plaats een gemeente in Nederland is dan gewoon de gemeentecode + gemeentenaam. Voor een plaats buiten Nederland is de gemeentecode leeg en wordt de gemeentenaam de buitenlandse plaatsnaam of aanduiding.\&quot; 
  */
 @ApiModel(description = "Gegevens over de voltrekking van het huwelijk of het aangaan van het geregistreerd partnerschap. * **datum** : De datum waarop het huwelijk is voltrokken of het partnerschap is aangegaan. * **land** : Het land waar het huwelijk is voltrokken of het partnerschap is aangegaan. * **plaats** : Als de plaats een gemeente in Nederland is dan gewoon de gemeentecode + gemeentenaam. Voor een plaats buiten Nederland is de gemeentecode leeg en wordt de gemeentenaam de buitenlandse plaatsnaam of aanduiding.\" ")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-02-19T12:52:03.859Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-02-22T08:00:54.409Z[Etc/UTC]")
 public class AangaanHuwelijkPartnerschap {
   public static final String SERIALIZED_NAME_DATUM = "datum";
   @SerializedName(SERIALIZED_NAME_DATUM)
