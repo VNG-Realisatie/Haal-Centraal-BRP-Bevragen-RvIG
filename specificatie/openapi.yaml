@@ -579,7 +579,8 @@ components:
             type: "string"
             example: "555555021"
         aNummer:
-          description: het A-nummer van de persoon
+          description: |
+                        Het A-nummer van de persoon
           type: "string"
         geheimhoudingPersoonsgegevens:
           type: boolean
