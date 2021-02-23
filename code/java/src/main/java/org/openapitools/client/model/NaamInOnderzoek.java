@@ -29,7 +29,7 @@ import org.openapitools.client.model.DatumOnvolledig;
  * Geeft aan welke gegevens over de naam in onderzoek zijn. Zie de [functionele specificaties](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen/blob/v1.1.0/features/in_onderzoek.feature) 
  */
 @ApiModel(description = "Geeft aan welke gegevens over de naam in onderzoek zijn. Zie de [functionele specificaties](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen/blob/v1.1.0/features/in_onderzoek.feature) ")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-02-22T08:00:54.409Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-02-22T08:37:05.945Z[Etc/UTC]")
 public class NaamInOnderzoek {
   public static final String SERIALIZED_NAME_GESLACHTSNAAM = "geslachtsnaam";
   @SerializedName(SERIALIZED_NAME_GESLACHTSNAAM)
