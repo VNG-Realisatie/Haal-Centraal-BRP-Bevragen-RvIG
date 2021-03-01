@@ -13,7 +13,7 @@ info:
                 Zie de [Functionele documentatie](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen/tree/v1.2.0/features) voor nadere toelichting.
 
                 De API zal door RvIG worden aangeboden. Daarin wordt een aantal afgeleide gegevens niet opgenomen. Daarom bevat deze specificatie minder gegevens dan de specificatie op [BRP-bevragen](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen/blob/master/specificatie/genereervariant/openapi.yaml).
-  version: "1.2.0"
+  version: "1.3.0"
   contact:
     url: https://github.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen
   license:
@@ -578,6 +578,10 @@ components:
         burgerservicenummer:
             type: "string"
             example: "555555021"
+        aNummer:
+          description: |
+                        Het A-nummer van de persoon
+          type: "string"
         geheimhoudingPersoonsgegevens:
           type: boolean
           title: "Indicatie geheim"
